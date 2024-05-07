@@ -4,6 +4,7 @@ function spin = metropolis(spin, kT, J)
 %   configuration of spins with an coupling coefficient |J| at a
 %   temperature |kT|. |spin| is a matrix of +/- 1's.
 %   Copyright 2017 The MathWorks, Inc.
+
 numIters = numel(spin);
 mu = 0.01;
 for iter = 1 : numIters
@@ -29,6 +30,7 @@ for iter = 1 : numIters
     if dE <= 0 || rand() <= prob
         spin(row, col) = - spin(row, col);
     end
+    
 
     
 end

@@ -211,3 +211,5 @@ cache/
 *.h5ad
 /checkpoints/
 
+ising_matrices/
+
